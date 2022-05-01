@@ -1,0 +1,99 @@
+:root {
+    --blue: #3EA1DB;
+    --blue-dark: #574AE8;
+    --white: #FFF;
+  
+    --title: #313131;
+    --text: #B6B6B6;
+  }
+
+@font-face {
+    font-family: 'inter';
+    src: url('../fontes/Inter-Medium.ttf'), url(../fontes/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url(../fontes/LexendDeca-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #ebebeb;
+}
+header {
+    height: 200px;
+    background: linear-gradient(90deg, #574AE8 0%, #3EA1DB 100%);
+    font-family: 'inter';
+}
+.caixa {
+    width: 60%;
+    color: var(--white);
+    margin: 0 auto;
+}
+.h-top {
+    display: flex;
+    justify-content: space-between;
+}
+.h-top p {
+    margin-top: 40px;
+    font-size: 1.4em;
+}
+.h-search {
+    margin-top: 50px;
+}
+.h-search input {
+    color: var(--white);
+    border-radius: 5px;
+    background-color: rgba(211, 211, 211, 0.527);
+    font-size: 1.1em;
+    padding: 15px;
+    width: 100%;
+    height: 55px;
+    border: none;
+}
+.h-search input::placeholder {
+    color: rgb(224, 224, 224);
+}
+.main {
+    font-family: 'Lexend Deca';
+}
+div.card {
+    width: 60%;
+    background: var(--white);
+    margin: 30px auto;
+    padding: 25px;
+    height: auto;
+    border-radius: 6px;
+}
+div.data {
+    font-size: 0.9rem;
+    color: var(--text);
+    display: flex;
+    justify-content: space-between;
+}
+.heart {
+    width: 20px;
+    cursor: pointer;
+}
+div.content {
+    margin-top: 20px;
+}
+div.content h1 {
+    font-size: 1.4rem;
+    color: var(--title);
+}
+div.content p {
+    color: var(--text);
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+@media (max-width: 790px) {
+    div.card, .caixa {
+        width: 85%;
+    }
+}
