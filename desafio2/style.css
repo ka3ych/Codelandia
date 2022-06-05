@@ -1,0 +1,105 @@
+/*Variáveis*/
+:root {
+  --bgSite: #f6f6f6;
+  --bgCard: #ebe9ea;
+  
+  --white: #fff;
+
+  --title: #181818;
+  --text: #474747;
+}
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'montserrat';
+  src: url(fontes/Montserrat-Medium.ttf);
+}
+body {
+  font-family: 'montserrat';
+  font-size: 12pt;
+}
+header #h-top {
+  background-color: #000;
+  color: rgb(206, 206, 206);
+  height: 40px;
+  text-align: center;
+  padding: 10px;
+}
+header #h-bot {
+  background-color: var(--bgSite);
+  height: 60px;
+  text-align: center;
+}
+header #h-bot h1 {
+  font-size: 1.7em;
+  line-height: 60px;
+}
+main #wall {
+  height: 380px;
+  background: url(img/wallpaper.jpeg);
+  background-size: cover;
+  background-position-y: center;
+}
+#wall #text-box {
+  position: relative;
+  height: 380px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: var(--white);
+}
+#wall #text-box h2 {
+  position: absolute;
+  font-size: 1.8em;
+  top: 130px;
+  left: 90px;
+}
+#wall #text-box p {
+  position: absolute;
+  width: 400px;
+  top: 190px;
+  left: 90px;
+  line-height: 30px;
+}
+
+#destaques {
+  height: 830px;
+  background-color: var(--bgSite);
+}
+#destaques #text h2 {
+  padding-top: 60px;
+  color: var(--title);
+  margin: 0 0 20px 530px;
+  font-size: 2em;
+}
+#destaques #text p {
+  margin-left: 320px;
+  color: var(--text);
+  font-size: 1.1em;
+}
+#jordans .line {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+#jordans .line .card {
+  width: 270px;
+  height: 270px;
+  border-radius: 10px;
+  margin-left: 15px;
+  background-color: var(--bgCard);
+}
+img {
+  width: 230px;
+  margin-top: 70px;
+}
+footer {
+  background-color: #000;
+  color: #cccccc;
+  height: 50px;
+  text-align: center;
+  padding: 15px;
+  letter-spacing: 1.3px;
+}
